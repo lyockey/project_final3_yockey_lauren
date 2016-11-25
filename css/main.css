@@ -10,7 +10,7 @@ html {
 
 @font-face {
     font-family: "Romance Fatal";
-    src: url("/fonts/romancefatal.ttf");
+    src: url("../fonts/romancefatal.ttf");
 }
 
 .container {
@@ -24,4 +24,9 @@ html {
     display: block;
     margin: auto;
     padding-top: 1em;
+}
+
+h1 {
+    font-family: "Romance Fatal", serif;
+    text-align: center;
 }
