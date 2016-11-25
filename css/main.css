@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+@font-face {
+    font-family: "Romance Fatal";
+    src: url("/fonts/romancefatal.ttf");
+}
+
 .container {
     max-width: 1200px;
     background-color: #ffffe6;
@@ -18,4 +23,5 @@ html {
     width: 10%;
     display: block;
     margin: auto;
+    padding-top: 1em;
 }
