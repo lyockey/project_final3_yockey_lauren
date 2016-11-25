@@ -13,3 +13,9 @@ html {
     background-color: #ffffe6;
     margin: auto;
 }
+
+#logo-img {
+    width: 10%;
+    display: block;
+    margin: auto;
+}
