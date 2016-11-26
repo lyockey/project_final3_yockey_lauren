@@ -13,6 +13,17 @@ html {
     src: url("../fonts/romancefatal.ttf");
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Romance Fatal", serif;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
 .container {
     max-width: 1200px;
     background-color: #ffffe6;
