@@ -16,12 +16,12 @@ html {
 h1,
 h2,
 h3,
-h4,
-nav {
+h4 {
     font-family: "Romance Fatal", serif;
 }
 
-p {
+p,
+nav {
     font-family: "Lato", sans-serif;
 }
 
@@ -34,6 +34,22 @@ p {
     padding: 0;
     position: absolute;
     width: 1px;
+}
+
+nav {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+nav li {
+    display: inline;
+    padding: 0 1em;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #71271c;
+    font-size: 1em;
 }
 
 .container {
@@ -49,7 +65,12 @@ p {
     padding-top: 1em;
 }
 
-h1 {
-    font-family: "Romance Fatal", serif;
+h1,
+h2 {
     text-align: center;
+}
+
+h2 {
+    color: #71271c;
+    padding-top: 1em;
 }
