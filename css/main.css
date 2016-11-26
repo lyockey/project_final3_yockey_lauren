@@ -75,3 +75,17 @@ h2 {
     padding-top: 1em;
     font-size: 2em;
 }
+
+/* ---------- MENU ------------ */
+.menu {
+    width: 80%;
+    margin: auto;
+}
+
+.menu a img {
+    width: calc(100% / 3 - 3em);
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+    border-radius: 0.2em;
+    margin: 1em;
+}
