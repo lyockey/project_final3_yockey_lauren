@@ -85,6 +85,11 @@ h2 {
     background-color: rgba(57, 50, 42, 0.8);
 }
 
+.menu h3 {
+    font-size: 2em;
+    border-bottom: 1px solid #71271c;
+}
+
 .menu a img {
     width: calc(100% / 3 - 3em);
     -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
