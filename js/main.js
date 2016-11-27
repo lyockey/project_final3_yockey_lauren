@@ -1,4 +1,4 @@
 $(document).ready(function () {
 
-    $.backstretch('img/diagonalley.png');
+    $.backstretch('img/banner.png');
 });
