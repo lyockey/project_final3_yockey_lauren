@@ -16,20 +16,11 @@ html {
 .container {
     max-width: 1200px;
     margin: auto;
-}
-
-header {
-    background-color: rgba(136, 128, 128, 0.44);
+    padding: 3em 3em 25em;
 }
 
 .logo-header {
     margin: 5% auto 0;
-}
-
-@media (min-width: 725px) {
-    .logo-header {
-        width: 50%;
-    }
 }
 
 h1,
@@ -45,10 +36,10 @@ h1 {
 }
 
 #logo-img {
-    width: 70%;
+    width: 30%;
     display: block;
     margin: auto;
-    padding: 4em 0 0 0;
+    padding: 1em 0 0 0;
 
 }
 
@@ -60,7 +51,7 @@ h1 {
     font-size: 3em;
     width: 100%;
     position: relative;
-    background: #71271c;
+    background: #e8b54c;
     color: #ffffff;
     text-align: center;
     padding: 1em; /* Adjust to suit */
@@ -73,7 +64,7 @@ h1 {
     position: absolute;
     display: block;
     bottom: -1em;
-    border: 1.5em solid #3e160f;
+    border: 1.5em solid #b58017;
     z-index: -1;
 }
 
@@ -95,7 +86,7 @@ h1 {
     position: absolute;
     display: block;
     border-style: solid;
-    border-color: #521c14 transparent transparent transparent;
+    border-color: #2c2721 transparent transparent transparent;
     bottom: -1em;
 }
 
@@ -130,17 +121,24 @@ nav {
 nav {
     text-align: center;
     padding-bottom: 2em;
+    background-color: #71271c;
+    margin: -2em auto;
+    width: 90%;
+}
+
+nav ul {
+    padding-top: 2em;
 }
 
 nav li {
     display: block;
-    padding: 0 1em;
+    padding: 1em;
 }
 
 nav li a {
     text-decoration: none;
     color: #e9e5e5;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 h1,
