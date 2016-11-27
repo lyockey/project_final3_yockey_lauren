@@ -13,6 +13,10 @@ html {
     src: url("../fonts/romancefatal.ttf");
 }
 
+header {
+    background-color: rgba(136, 128, 128, 0.44);
+}
+
 h1,
 h2,
 h3,
@@ -20,9 +24,81 @@ h4 {
     font-family: "Romance Fatal", serif;
 }
 
+h1 {
+    color: #ffffff;
+    font-size: 3em;
+}
+
+
+/* ------ RIBBON BACKGROUND FOR H1 -------- */
+
+/* -- Tutorial found at https://css-tricks.com/snippets/css/ribbon/ -- */
+.ribbon {
+    font-size: 3em;
+    width: 100%;
+    position: relative;
+    background: #71271c;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em; /* Adjust to suit */
+    margin: 0.5em auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon::before,
+.ribbon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #3e160f;
+    z-index: -1;
+}
+
+.ribbon::before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.ribbon::after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.ribbon .ribbon-content::before,
+.ribbon .ribbon-content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #521c14 transparent transparent transparent;
+    bottom: -1em;
+}
+
+.ribbon .ribbon-content::before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content::after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
 p,
 nav {
     font-family: "Lato", sans-serif;
+}
+
+.logo-header {
+    margin: 5% auto 0;
+}
+
+@media (min-width: 725px) {
+    .logo-header {
+        width: 50%;
+    }
 }
 
 .visuallyhidden {
@@ -42,27 +118,27 @@ nav {
 }
 
 nav li {
-    display: inline;
+    display: block;
     padding: 0 1em;
 }
 
 nav li a {
     text-decoration: none;
-    color: #71271c;
+    color: #e9e5e5;
     font-size: 1em;
 }
 
 .container {
     max-width: 1200px;
-    background-color: rgba(255, 255, 230, 0.75);
-    margin: 25% auto;
+    margin: auto;
 }
 
 #logo-img {
-    width: 30%;
+    width: 70%;
     display: block;
     margin: auto;
-    padding-top: 1em;
+    padding: 4em 0 0 0;
+
 }
 
 h1,
