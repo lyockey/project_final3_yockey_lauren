@@ -13,8 +13,23 @@ html {
     src: url("../fonts/romancefatal.ttf");
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 header {
     background-color: rgba(136, 128, 128, 0.44);
+}
+
+.logo-header {
+    margin: 5% auto 0;
+}
+
+@media (min-width: 725px) {
+    .logo-header {
+        width: 50%;
+    }
 }
 
 h1,
@@ -27,6 +42,14 @@ h4 {
 h1 {
     color: #ffffff;
     font-size: 3em;
+}
+
+#logo-img {
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 4em 0 0 0;
+
 }
 
 
@@ -86,19 +109,11 @@ h1 {
     border-width: 1em 1em 0 0;
 }
 
+
+/* ----- NAVIGATION ---- */
 p,
 nav {
     font-family: "Lato", sans-serif;
-}
-
-.logo-header {
-    margin: 5% auto 0;
-}
-
-@media (min-width: 725px) {
-    .logo-header {
-        width: 50%;
-    }
 }
 
 .visuallyhidden {
@@ -126,19 +141,6 @@ nav li a {
     text-decoration: none;
     color: #e9e5e5;
     font-size: 1em;
-}
-
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-#logo-img {
-    width: 70%;
-    display: block;
-    margin: auto;
-    padding: 4em 0 0 0;
-
 }
 
 h1,
