@@ -19,6 +19,14 @@ html {
     padding: 3em 3em 5em;
 }
 
+.food,
+.events,
+.awards,
+.contact {
+    background-color: rgba(247, 241, 228, 0.9);
+    padding: 1em 1.5em;
+}
+
 .logo-header {
     margin: 5% auto 0;
 }
@@ -35,9 +43,40 @@ h1 {
     font-size: 3em;
 }
 
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #71271c;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
 h3 {
     color: #39322a;
-    font-size: 2em;
+    font-size: 1.4em;
+}
+
+@media (min-width: 850px) {
+    h3 {
+        font-size: 2em;
+    }
+}
+
+h3,
+p {
+    color: #39322a;
+}
+
+p,
+nav {
+    font-family: "Lato", sans-serif;
+}
+
+p {
+    line-height: 30px;
 }
 
 #logo-img {
@@ -121,11 +160,6 @@ h3 {
 
 
 /* ----- NAVIGATION ---- */
-p,
-nav {
-    font-family: "Lato", sans-serif;
-}
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -178,16 +212,6 @@ nav li a {
     font-size: 1.2em;
 }
 
-h1,
-h2 {
-    text-align: center;
-}
-
-h2 {
-    color: #71271c;
-    padding-top: 1em;
-    font-size: 2em;
-}
 
 /* ---------- MENU ------------ */
 .food {
@@ -245,26 +269,18 @@ h2 {
 
 
 /* --------- EVENTS ----------- */
-.food,
-.events,
-.awards,
-.contact {
-    background-color: rgba(247, 241, 228, 0.9);
-    padding: 1em 1.5em;
-}
-
 .events h2 {
     padding: 0.8em 1em;
 }
 
 .events img {
     display: block;
-    width: 30%;
+    width: 20%;
     margin: auto;
 }
 
 .events p {
-    margin: 1em 1em 2em;
+    margin: 1em 2em 4em;
 }
 
 
@@ -275,7 +291,8 @@ h2 {
     margin: 1em auto;
 }
 
-.awards {
+.awards,
+.events {
     text-align: center;
 }
 
