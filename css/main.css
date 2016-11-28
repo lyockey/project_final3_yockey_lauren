@@ -16,7 +16,7 @@ html {
 .container {
     max-width: 1200px;
     margin: auto;
-    padding: 3em 3em 5em;
+    padding: 0 3em 3em;
 }
 
 .food,
