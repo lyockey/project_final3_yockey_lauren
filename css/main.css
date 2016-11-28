@@ -234,7 +234,8 @@ h2 {
 
 /* --------- EVENTS ----------- */
 .events,
-.awards {
+.awards,
+.contact {
     background-color: rgba(247, 241, 228, 0.9);
     padding: 1em 1.5em;
 }
@@ -255,6 +256,18 @@ h2 {
 
 .events p {
     margin: 1em 1em 2em;
+}
+
+
+/* --------- AWARDS ------------ */
+
+
+/* --------- CONTACT ----------- */
+.contact img {
+    display: block;
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
 
