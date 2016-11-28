@@ -224,3 +224,20 @@ h2 {
 
 
 /* --------- EVENTS ----------- */
+
+
+/* --------- FOOTER ------------ */
+footer {
+    text-align: center;
+    background-color: #534e2f;
+    color: #ffffff;
+    font-size: 0.7em;
+}
+
+footer a {
+    color: #ffffff;
+}
+
+footer img {
+    width: 5%;
+}
