@@ -39,8 +39,6 @@ h1 {
     width: 30%;
     display: block;
     margin: auto;
-    padding: 1em 0 0 0;
-
 }
 
 
@@ -234,8 +232,30 @@ h2 {
 }
 
 
-
 /* --------- EVENTS ----------- */
+.events,
+.awards {
+    background-color: rgba(247, 241, 228, 0.9);
+    padding: 1em 1.5em;
+}
+
+.events h2 {
+    padding: 0.8em 1em;
+}
+
+.events img {
+    display: block;
+    width: 30%;
+    margin: auto;
+}
+
+.events h3 {
+    color: #39322a;
+}
+
+.events p {
+    margin: 1em 1em 2em;
+}
 
 
 /* --------- FOOTER ------------ */
