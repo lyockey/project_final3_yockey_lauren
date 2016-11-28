@@ -187,6 +187,13 @@ nav ul {
 nav li {
     display: block;
     padding: 1em;
+    font-size: 0.8em;
+}
+
+@media (min-width: 850px) {
+    nav li {
+        font-size: 1em;
+    }
 }
 
 @media (min-width: 1015px) {
