@@ -11,4 +11,12 @@ $(document).ready(function () {
             indentChildren: false,
             childrenIndenter: '&nbsp;'
         });
+
+    $('#logo-img').addClass('animated infinite pulse');
+
+    $('.nav-link').hover(function () {
+        $(this).addClass('animated tada');
+    }, function () {
+        $(this).removeClass('animated tada');
+    });
 });
