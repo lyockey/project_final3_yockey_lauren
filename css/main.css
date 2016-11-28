@@ -46,7 +46,7 @@ h1 {
 
 /* -- Tutorial found at https://css-tricks.com/snippets/css/ribbon/ -- */
 .ribbon {
-    font-size: 3em;
+    font-size: 2em;
     width: 100%;
     position: relative;
     background: #e8b54c;
@@ -98,6 +98,22 @@ h1 {
     border-width: 1em 1em 0 0;
 }
 
+@media (min-width: 550px) {
+    .ribbon {
+        font-size: 2em;
+    }
+
+    #logo-img {
+        width: 15%;
+    }
+}
+
+@media (min-width: 850px) {
+    .ribbon {
+        font-size: 3em;
+    }
+}
+
 
 /* ----- NAVIGATION ---- */
 p,
@@ -142,12 +158,8 @@ nav li {
         margin: auto;
     }
 
-    #logo-img {
-        width: 15%;
-    }
-
     .ribbon {
-        padding: 0 1em 1em;
+        padding: 1em;
     }
 
     nav li {
