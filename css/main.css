@@ -35,6 +35,11 @@ h1 {
     font-size: 3em;
 }
 
+h3 {
+    color: #39322a;
+    font-size: 2em;
+}
+
 #logo-img {
     width: 30%;
     display: block;
@@ -189,17 +194,13 @@ h2 {
     width: 100%;
     margin: auto;
     text-align: center;
-    color: #e8b54c;
-    background-color: rgba(57, 50, 42, 0.9);
 }
 
 .food h2 {
-    color: white;
     font-size: 2.5em;
 }
 
 .food h3 {
-    font-size: 2em;
     border-bottom: 1px solid #71271c;
 }
 
@@ -239,12 +240,12 @@ h2 {
 
 .dish h3 {
     margin: 1em;
-    color: #39322a;
     font-size: 1.5em;
 }
 
 
 /* --------- EVENTS ----------- */
+.food,
 .events,
 .awards,
 .contact {
@@ -262,17 +263,25 @@ h2 {
     margin: auto;
 }
 
-.events h3 {
-    color: #39322a;
-}
-
 .events p {
     margin: 1em 1em 2em;
 }
 
 
 /* --------- AWARDS ------------ */
+.awards img {
+    width: 15%;
+    display: block;
+    margin: 1em auto;
+}
 
+.awards {
+    text-align: center;
+}
+
+.awards p {
+    padding-bottom: 2em;
+}
 
 /* --------- CONTACT ----------- */
 .contact img {
