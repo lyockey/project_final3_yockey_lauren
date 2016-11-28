@@ -66,7 +66,8 @@ h3 {
 }
 
 h3,
-p {
+p,
+footer a {
     color: #39322a;
 }
 
@@ -313,14 +314,15 @@ nav li a {
 footer {
     text-align: center;
     background-color: #534e2f;
-    color: #ffffff;
     font-size: 0.7em;
-}
-
-footer a {
-    color: #ffffff;
 }
 
 footer img {
     width: 5%;
+}
+
+@media (min-width: 850px) {
+    footer img {
+        width: 3.5%;
+    }
 }
