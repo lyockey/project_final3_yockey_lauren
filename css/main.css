@@ -23,7 +23,8 @@ html {
 .food,
 .events,
 .awards,
-.contact {
+.contact,
+.location-hours {
     background-color: rgba(247, 241, 228, 0.9);
     padding: 1em 1.5em;
 }
@@ -351,7 +352,8 @@ nav li a {
 }
 
 /* --------- CONTACT ----------- */
-.contact {
+.contact,
+.location-hours {
     text-align: center;
 }
 
@@ -374,6 +376,20 @@ nav li a {
     }
 }
 
+.location-hours {
+    padding: 0;
+}
+
+#hours {
+    background-color: #534e2f;
+    color: #e9e5e5;
+    padding: 0.5em;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+}
 
 /* --------- FOOTER ------------ */
 footer {
