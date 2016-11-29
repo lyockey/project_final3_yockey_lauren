@@ -14,6 +14,7 @@ $(document).ready(function () {
 
 
     var logo = $('#logo-img');
+    logo.addClass('animated bounce');
     logo.hover(function () {
         $(this).addClass('animated hinge');
     }, function () {

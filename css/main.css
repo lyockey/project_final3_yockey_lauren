@@ -19,6 +19,7 @@ html {
     padding: 0 3em 3em;
 }
 
+.welcome,
 .food,
 .events,
 .awards,
@@ -220,6 +221,28 @@ nav li a {
     font-size: 1.2em;
 }
 
+/* ---------- HOME -------- */
+.welcome p {
+    margin: 3em 3em 2em;
+}
+
+#menu-button {
+    background-color: #71271c;
+    color: #e9e5e5;
+    padding: 1em 2em;
+    border-radius: 25px;
+    display: block;
+    width: 25%;
+    margin: 0 auto 2em;
+    text-align: center;
+    font-size: 0.7em;
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+#menu-button:hover {
+    transform: scale(1.2);
+}
 
 /* ---------- MENU ------------ */
 .food {
