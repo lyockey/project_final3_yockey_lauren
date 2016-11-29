@@ -242,7 +242,13 @@ nav li a {
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
     border-radius: 0.2em;
     margin: 1em;
+    transition: transform 0.5s;
 }
+
+.food a img:hover {
+    transform: scale(1.2);
+}
+
 
 
 /* ---------- TOM'S SPECIAL ----------- */
