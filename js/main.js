@@ -27,9 +27,23 @@ $(document).ready(function () {
         $(this).removeClass('animated tada');
     });
 
+    var title = $('h2');
+    title.addClass('animated lightSpeedIn');
+
+    var subTitle = $('h3');
+    subTitle.addClass('animated fadeInUp');
+
     var timer = $('.events img');
     timer.addClass('animated flip');
 
     var award = $('.awards img');
     award.addClass('animated flip');
+
+    var contact = $('.contact img');
+    contact.hover(function () {
+        $(this).addClass('animated swing');
+    }, function () {
+        $(this).removeClass('animated swing');
+    });
+
 });
