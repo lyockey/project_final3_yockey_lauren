@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $('#menu').slimmenu(
         {
-            resizeWidth: '1015',
+            resizeWidth: '950',
             collapserTitle: '',
             animSpeed: 'medium',
             easingEffect: null,

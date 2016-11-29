@@ -92,13 +92,13 @@ p {
 /* -- Tutorial found at https://css-tricks.com/snippets/css/ribbon/ -- */
 .ribbon {
     font-size: 2em;
-    width: 100%;
+    width: 90%;
     position: relative;
     background: #e8b54c;
     color: #ffffff;
     text-align: center;
     padding: 1em; /* Adjust to suit */
-    margin: 0.5em auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+    margin: 0 auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 
 .ribbon::before,
@@ -174,10 +174,10 @@ p {
 
 nav {
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     background-color: #71271c;
     margin: -2em auto;
-    width: 90%;
+    width: 80%;
 }
 
 nav ul {
@@ -192,11 +192,11 @@ nav li {
 
 @media (min-width: 850px) {
     nav li {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
-@media (min-width: 1015px) {
+@media (min-width: 950px) {
     .container {
         padding: 3em 3em 1em;
     }
