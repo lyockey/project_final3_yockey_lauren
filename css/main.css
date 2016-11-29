@@ -315,11 +315,27 @@ nav li a {
 }
 
 /* --------- CONTACT ----------- */
+.contact {
+    text-align: center;
+}
+
 .contact img {
     display: block;
-    width: 50%;
+    width: calc(100% / 1.75);
     margin: auto;
-    text-align: center;
+}
+
+@media (min-width: 550px) {
+    .contact img {
+        display: inline;
+        width: calc(100% / 2 - 1em);
+    }
+}
+
+@media (min-width: 900px) {
+    .contact img {
+        width: calc(100% / 2.75 - 1em);
+    }
 }
 
 
