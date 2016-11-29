@@ -39,11 +39,6 @@ h4 {
     font-family: "Romance Fatal", serif;
 }
 
-h1 {
-    color: #ffffff;
-    font-size: 3em;
-}
-
 h1,
 h2 {
     text-align: center;
@@ -79,12 +74,6 @@ nav {
 
 p {
     line-height: 30px;
-}
-
-#logo-img {
-    width: 30%;
-    display: block;
-    margin: auto;
 }
 
 
@@ -144,13 +133,25 @@ p {
     border-width: 1em 1em 0 0;
 }
 
+.ribbon-content {
+    display: none;
+}
+
+#logo-img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
 @media (min-width: 550px) {
-    .ribbon {
-        font-size: 2em;
+    .ribbon-content {
+        display: block;
+        color: #ffffff;
+        font-size: 1em;
     }
 
     #logo-img {
-        width: 15%;
+        width: 20%;
     }
 }
 
