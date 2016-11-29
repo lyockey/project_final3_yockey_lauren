@@ -230,10 +230,10 @@ nav li a {
 #menu-button {
     background-color: #71271c;
     color: #e9e5e5;
-    padding: 1em 2em;
+    padding: 1em;
     border-radius: 25px;
     display: block;
-    width: 25%;
+    width: 45%;
     margin: 0 auto 2em;
     text-align: center;
     font-size: 0.7em;
@@ -243,6 +243,18 @@ nav li a {
 
 #menu-button:hover {
     transform: scale(1.2);
+}
+
+@media (min-width: 630px) {
+    #menu-button {
+        width: 35%;
+    }
+}
+
+@media (min-width: 850px) {
+    #menu-button {
+        width: 25%;
+    }
 }
 
 /* ---------- MENU ------------ */
