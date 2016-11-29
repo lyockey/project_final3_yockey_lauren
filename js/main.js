@@ -12,11 +12,24 @@ $(document).ready(function () {
             childrenIndenter: '&nbsp;'
         });
 
-    $('#logo-img').addClass('animated infinite pulse');
 
-    $('.nav-link').hover(function () {
+    var logo = $('#logo-img');
+    logo.hover(function () {
+        $(this).addClass('animated hinge');
+    }, function () {
+        $(this).removeClass('animated hinge');
+    });
+
+    var navLinks = $('nav li');
+    navLinks.hover(function () {
         $(this).addClass('animated tada');
     }, function () {
         $(this).removeClass('animated tada');
     });
+
+    var timer = $('.events img');
+    timer.addClass('animated flip');
+
+    var award = $('.awards img');
+    award.addClass('animated flip');
 });
