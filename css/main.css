@@ -8,6 +8,12 @@ html {
     box-sizing: inherit;
 }
 
+@media (min-width: 1300px) {
+    body {
+        margin: 10em 0 0;
+    }
+}
+
 @font-face {
     font-family: "Romance Fatal";
     src: url("../fonts/romancefatal.ttf");
@@ -77,18 +83,21 @@ p {
     line-height: 30px;
 }
 
+ul {
+    padding: 0;
+}
+
 
 /* ------ RIBBON BACKGROUND FOR H1 -------- */
 
 /* -- Tutorial found at https://css-tricks.com/snippets/css/ribbon/ -- */
 .ribbon {
-    font-size: 2em;
     width: 90%;
     position: relative;
     background: #e8b54c;
     color: #ffffff;
     text-align: center;
-    padding: 1em; /* Adjust to suit */
+    padding: 0.5em 0; /* Adjust to suit */
     margin: 0 auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
 }
 
@@ -149,6 +158,8 @@ p {
         display: block;
         color: #ffffff;
         font-size: 1em;
+        margin: -0.9em 0 1em;
+        padding: 0;
     }
 
     #logo-img {
@@ -158,7 +169,7 @@ p {
 
 @media (min-width: 850px) {
     .ribbon {
-        font-size: 3em;
+        font-size: 1.5em;
     }
 }
 
@@ -327,7 +338,7 @@ nav li a {
 .events img {
     display: block;
     width: 20%;
-    margin: auto;
+    margin: 0 auto -1.5em;
 }
 
 .events p {
