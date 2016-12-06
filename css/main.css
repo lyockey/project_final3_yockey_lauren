@@ -239,7 +239,7 @@ nav li a {
     margin: 3em 3em 2em;
 }
 
-#menu-button {
+.menu-button {
     background-color: #71271c;
     color: #e9e5e5;
     padding: 1em;
@@ -253,18 +253,18 @@ nav li a {
     transition: transform 0.5s;
 }
 
-#menu-button:hover {
+.menu-button:hover {
     transform: scale(1.2);
 }
 
 @media (min-width: 630px) {
-    #menu-button {
+    .menu-button {
         width: 35%;
     }
 }
 
 @media (min-width: 850px) {
-    #menu-button {
+    .menu-button {
         width: 25%;
     }
 }

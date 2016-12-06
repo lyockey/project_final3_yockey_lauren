@@ -61,3 +61,32 @@ $(document).ready(function () {
     award.addClass('animated flip');
 
 });
+
+//////// CUSTOM JAVASCRIPT //////
+var more = document.getElementById('more');
+var events = document.getElementsByClassName('events')[0];
+
+more.addEventListener('click', function (event) {
+    event.preventDefault();
+    var event2 = document.createElement('article');
+
+    event2.innerHTML = '<img src="img/event.png" alt="Upcoming Event"><h3>Slug Club Alumni Meeting</h3><p>Meet all of Professor Horace Slughorn\'s favorite pupils and see how they have taken the Wizarding World by storm. If you have dreams of one day working at the Ministry of Magic, you don\'t want to miss this exclusive networking event.</p><a href="#events" class="menu-button" id="more2">Show Next Event</a>';
+
+    event2.className = 'animated fadeInUp';
+    events.appendChild(event2);
+    more.parentNode.removeChild(more);
+
+    var more2 = document.getElementById('more2');
+
+    more2.addEventListener('click', function (e) {
+        e.preventDefault();
+        var event3 = document.createElement('article');
+
+        event3.innerHTML = '<img src="img/event.png" alt="Upcoming Event"><h3>Goblin Speed Dating</h3><p>Our monthly speed-dating event is sure to help the lonely goblin find a love connection outside of Gringott\'s walls.</p>';
+
+        event3.className = 'animated fadeInUp';
+        events.appendChild(event3);
+        more2.parentNode.removeChild(more2);
+    });
+
+});
