@@ -62,7 +62,10 @@ $(document).ready(function () {
 
 });
 
+
 //////// CUSTOM JAVASCRIPT //////
+/////// On the Events page, show only the first event on load. When the user clicks on the Show Next Event button, a new article with the second event will be created, along with its inner HTML, and be appended to the parent container. When the next event is appended, the original button will be removed to avoid repetitive appending.
+
 var more = document.getElementById('more');
 var events = document.getElementsByClassName('events')[0];
 
@@ -89,4 +92,19 @@ more.addEventListener('click', function (event) {
         more2.parentNode.removeChild(more2);
     });
 
+});
+
+///// Same type of append event, but on the Awards page
+var next = document.getElementById('next');
+var awards = document.getElementsByClassName('awards')[0];
+
+next.addEventListener('click', function (event) {
+    event.preventDefault();
+    var award2 = document.createElement('article');
+
+    award2.innerHTML = '<img src="img/award.png" alt="Award"><h3>2014 Daily Prophet\'s Friendliest Innkeeper</h3><p>With a hunch in his back and a smile on his face, Tom is sure to make your stay above the pub as pleasant as possible.</p>';
+
+    award2.className = 'animated fadeInUp';
+    awards.appendChild(award2);
+    next.parentNode.removeChild(next);
 });
