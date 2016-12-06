@@ -8,9 +8,35 @@ html {
     box-sizing: inherit;
 }
 
+@media (min-width: 1300px) {
+    body {
+        margin: 10em 0 0;
+    }
+}
+
 @font-face {
     font-family: "Romance Fatal";
     src: url("../fonts/romancefatal.ttf");
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 3em 3em;
+}
+
+.welcome,
+.food,
+.events,
+.awards,
+.contact,
+.location-hours {
+    background-color: rgba(247, 241, 228, 0.9);
+    padding: 1em 1.5em;
+}
+
+.logo-header {
+    margin: 5% auto 0;
 }
 
 h1,
@@ -20,11 +46,135 @@ h4 {
     font-family: "Romance Fatal", serif;
 }
 
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #71271c;
+    padding-top: 1em;
+    font-size: 2em;
+}
+
+h3 {
+    color: #39322a;
+    font-size: 1.4em;
+}
+
+@media (min-width: 850px) {
+    h3 {
+        font-size: 2em;
+    }
+}
+
+h3,
+p,
+footer a {
+    color: #39322a;
+}
+
 p,
 nav {
     font-family: "Lato", sans-serif;
 }
 
+p {
+    line-height: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+
+/* ------ RIBBON BACKGROUND FOR H1 -------- */
+
+/* -- Tutorial found at https://css-tricks.com/snippets/css/ribbon/ -- */
+.ribbon {
+    width: 90%;
+    position: relative;
+    background: #e8b54c;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5em 0; /* Adjust to suit */
+    margin: 0 auto; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+}
+
+.ribbon::before,
+.ribbon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -1em;
+    border: 1.5em solid #b58017;
+    z-index: -1;
+}
+
+.ribbon::before {
+    left: -2em;
+    border-right-width: 1.5em;
+    border-left-color: transparent;
+}
+
+.ribbon::after {
+    right: -2em;
+    border-left-width: 1.5em;
+    border-right-color: transparent;
+}
+
+.ribbon .ribbon-content::before,
+.ribbon .ribbon-content::after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-style: solid;
+    border-color: #2c2721 transparent transparent transparent;
+    bottom: -1em;
+}
+
+.ribbon .ribbon-content::before {
+    left: 0;
+    border-width: 1em 0 0 1em;
+}
+
+.ribbon .ribbon-content::after {
+    right: 0;
+    border-width: 1em 1em 0 0;
+}
+
+.ribbon-content {
+    display: none;
+}
+
+#logo-img {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+@media (min-width: 550px) {
+    .ribbon-content {
+        display: block;
+        color: #ffffff;
+        font-size: 1em;
+        margin: -0.9em 0 1em;
+        padding: 0;
+    }
+
+    #logo-img {
+        width: 20%;
+    }
+}
+
+@media (min-width: 850px) {
+    .ribbon {
+        font-size: 1.5em;
+    }
+}
+
+
+/* ----- NAVIGATION ---- */
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -38,62 +188,237 @@ nav {
 
 nav {
     text-align: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
+    background-color: #71271c;
+    margin: -2em auto;
+    width: 80%;
+}
+
+nav ul {
+    padding-top: 2em;
 }
 
 nav li {
-    display: inline;
-    padding: 0 1em;
+    display: block;
+    padding: 1em;
+    font-size: 0.8em;
+}
+
+@media (min-width: 850px) {
+    nav li {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 950px) {
+    .container {
+        padding: 3em 3em 1em;
+    }
+
+    .logo-header {
+        margin: auto;
+    }
+
+    .ribbon {
+        padding: 1em;
+    }
+
+    nav li {
+        display: inline;
+    }
 }
 
 nav li a {
     text-decoration: none;
-    color: #71271c;
-    font-size: 1em;
+    color: #e9e5e5;
+    font-size: 1.2em;
 }
 
-.container {
-    max-width: 1200px;
-    background-color: rgba(255, 255, 230, 0.75);
-    margin: auto;
+/* ---------- HOME -------- */
+.welcome p {
+    margin: 3em 3em 2em;
 }
 
-#logo-img {
-    width: 10%;
+#menu-button {
+    background-color: #71271c;
+    color: #e9e5e5;
+    padding: 1em;
+    border-radius: 25px;
     display: block;
-    margin: auto;
-    padding-top: 1em;
-}
-
-h1,
-h2 {
+    width: 45%;
+    margin: 0 auto 2em;
     text-align: center;
+    font-size: 0.7em;
+    text-decoration: none;
+    transition: transform 0.5s;
 }
 
-h2 {
-    color: #71271c;
-    padding-top: 1em;
-    font-size: 2em;
+#menu-button:hover {
+    transform: scale(1.2);
+}
+
+@media (min-width: 630px) {
+    #menu-button {
+        width: 35%;
+    }
+}
+
+@media (min-width: 850px) {
+    #menu-button {
+        width: 25%;
+    }
 }
 
 /* ---------- MENU ------------ */
-.menu {
+.food {
     width: 100%;
     margin: auto;
     text-align: center;
-    color: #e8b54c;
-    background-color: rgba(57, 50, 42, 0.8);
 }
 
-.menu h3 {
-    font-size: 2em;
+.food h2 {
+    font-size: 2.5em;
+}
+
+.food h3 {
     border-bottom: 1px solid #71271c;
 }
 
-.menu a img {
+.food a img {
     width: calc(100% / 3 - 3em);
     -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
     border-radius: 0.2em;
     margin: 1em;
+    transition: transform 0.5s;
+}
+
+.food a img:hover {
+    transform: scale(1.2);
+}
+
+
+
+/* ---------- TOM'S SPECIAL ----------- */
+.dish {
+    padding: 1em 1em 5em;
+    background-color: #f7f1e4;
+    text-align: center;
+}
+
+.dish img {
+    width: 100%;
+    margin: auto;
+    border-radius: 0.2em;
+    -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media (min-width: 750px) {
+    .dish img {
+        width: calc(100% / 1.5);
+    }
+
+    .dish p {
+        margin: 0 9em;
+    }
+}
+
+.dish h3 {
+    margin: 1em;
+    font-size: 1.5em;
+}
+
+
+/* --------- EVENTS ----------- */
+.events h2 {
+    padding: 0.8em 1em;
+}
+
+.events img {
+    display: block;
+    width: 20%;
+    margin: 0 auto -1.5em;
+}
+
+.events p {
+    margin: 1em 2em 4em;
+}
+
+
+/* --------- AWARDS ------------ */
+.awards img {
+    width: 15%;
+    display: block;
+    margin: 1em auto;
+}
+
+.awards,
+.events {
+    text-align: center;
+}
+
+.awards p {
+    padding-bottom: 2em;
+}
+
+/* --------- CONTACT ----------- */
+.contact,
+.location-hours {
+    text-align: center;
+}
+
+.contact img {
+    display: block;
+    width: calc(100% / 1.75);
+    margin: auto;
+}
+
+@media (min-width: 550px) {
+    .contact img {
+        display: inline;
+        width: calc(100% / 2 - 1em);
+    }
+}
+
+@media (min-width: 900px) {
+    .contact img {
+        width: calc(100% / 2.75 - 1em);
+    }
+}
+
+.location-hours {
+    padding: 0;
+}
+
+#hours {
+    background-color: #534e2f;
+    color: #e9e5e5;
+    padding: 0.5em;
+    margin: 0;
+}
+
+iframe {
+    width: 100%;
+}
+
+/* --------- FOOTER ------------ */
+footer {
+    text-align: center;
+    background-color: #534e2f;
+    font-size: 0.7em;
+}
+
+#credit {
+    padding-top: 3em;
+}
+
+footer img {
+    width: 5%;
+}
+
+@media (min-width: 850px) {
+    footer img {
+        width: 3.5%;
+    }
 }
